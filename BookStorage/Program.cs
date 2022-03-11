@@ -105,9 +105,9 @@ namespace BookStorage
             Console.WriteLine("Книга добавлена в хранилище");
         }
 
-        public void DeleteBook(int index = 0)
+        public void DeleteBook(int index = -1)
         {
-            if (index == 0)
+            if (index == -1)
             {
                 ShowInfo();
                 Console.Write("\nВыберите книгу: ");
